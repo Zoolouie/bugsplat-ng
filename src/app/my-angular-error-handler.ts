@@ -1,6 +1,6 @@
 import { ErrorHandler, Injectable, Inject, InjectionToken, Optional } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { BugSplatLogger, BugSplat, BugSplatConfiguration } from 'bugsplat';
+import { BugSplatLogger, BugSplat, BugSplatConfiguration } from 'bugsplat-ng';
 
 
 @Injectable()

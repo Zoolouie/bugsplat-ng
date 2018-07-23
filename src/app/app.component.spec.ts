@@ -2,7 +2,7 @@ import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { MyAngularErrorHandler } from './my-angular-error-handler';
 import { ErrorHandler } from '../../node_modules/@angular/core';
-import { BugSplatErrorHandler, BugSplatConfiguration, BugSplat, BugSplatLogger, Logger } from 'bugsplat';
+import { BugSplatErrorHandler, BugSplatConfiguration, BugSplat, BugSplatLogger, Logger } from 'bugsplat-ng';
 
 describe('DatabaseApplicationVersionSelector', () => {
   let component: AppComponent
