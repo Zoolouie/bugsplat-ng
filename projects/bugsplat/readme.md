@@ -1,0 +1,1 @@
+A file testing the functionality of ng-6 crasher

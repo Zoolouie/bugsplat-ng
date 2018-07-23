@@ -1,27 +1,33 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-describe('AppComponent', () => {
+import { MyAngularErrorHandler } from './my-angular-error-handler';
+import { ErrorHandler } from '../../node_modules/@angular/core';
+import { BugSplatErrorHandler, BugSplatConfiguration, BugSplat, BugSplatLogger, Logger } from 'bugsplat';
+
+describe('DatabaseApplicationVersionSelector', () => {
+  let component: AppComponent
+  let fixture: ComponentFixture<AppComponent>;
+  const fakeBugSplat = new BugSplat(new BugSplatConfiguration("Test", "test", "fred") , null, null);
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
       ],
-    }).compileComponents();
+      providers: [
+      MyAngularErrorHandler,
+      ],
+    })
+      .compileComponents();
   }));
-  it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
-  it(`should have as title 'app'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app');
-  }));
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    component.myAngularHandler.bugsplat = fakeBugSplat;
+    component = fixture.componentInstance;
     fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to my-angular6-crasher!');
-  }));
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 });
