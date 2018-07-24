@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
 })
 export class AppComponent implements OnInit, OnDestroy {
 
-  title = "my-angular-6-crasher";
+  title = "my-angular-crasher";
   
   crashId = "";
   database = "";
@@ -18,12 +18,11 @@ export class AppComponent implements OnInit, OnDestroy {
   logs = "";
 
   bugSplatEventSubscription: Subscription;
-  myAngularHandler = (<MyAngularErrorHandler>this.errorHandler);
 
   constructor(private errorHandler: ErrorHandler) { }
 
   ngOnInit() {
-    const myAngularErrorHandler = this.myAngularHandler;
+    const myAngularErrorHandler = (<MyAngularErrorHandler>this.errorHandler);
     this.bugSplatEventSubscription = myAngularErrorHandler.bugsplat.getObservable().subscribe((event) => {
       this.database = myAngularErrorHandler.config.database;
       this.crashId = "" + event.responseData.crash_id;
