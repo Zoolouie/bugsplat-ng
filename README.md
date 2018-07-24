@@ -82,9 +82,9 @@ throw new Error("foobar!");
 
 Navigate to the [All Crashes](http://www.bugsplat.com/allcrash/) page in BugSplat and you should see a new crash report for the application you just configured. Click the link in the Id column to see details about your crash on the Individual Crash page:
 
-![AllCrashng](https://s3.amazonaws.com/bugsplat-public/npm/allCrashng.png)
+![AllCrash](https://s3.amazonaws.com/bugsplat-public/npm/allCrash.png)
 
-![IndividualCrashng](https://s3.amazonaws.com/bugsplat-public/npm/individualCrashng.png)
+![IndividualCrash](https://s3.amazonaws.com/bugsplat-public/npm/individualCrash.png)
 
 ## Extended Configuration
 You can post additional information to BugSplat by creating a wrapper around the BugSplat object. To do so, create a new class that implements Angular’s ErrorHandler interface. In the handlerError method make a call to BugSplat.post passing it the error object:
