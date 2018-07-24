@@ -17,11 +17,11 @@
       "dom"
     ],
     "paths": {
-      "bugsplat": [
-        "dist/bugsplat"
+      "bugsplat-ng": [
+        "dist/bugsplat-ng"
       ],
-      "bugsplat/*": [
-        "dist/bugsplat/*"
+      "bugsplat-ng/*": [
+        "dist/bugsplat-ng/*"
       ]
     }
   }

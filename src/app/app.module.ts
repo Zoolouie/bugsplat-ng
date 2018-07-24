@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { BugSplatErrorHandler, BugSplatConfiguration, BugSplatLogger, BugSplatLogLevel } from 'bugsplat';
+import { BugSplatErrorHandler, BugSplatConfiguration, BugSplatLogger, BugSplatLogLevel } from 'bugsplat-ng';
 import { MyAngularErrorHandler } from './my-angular-error-handler';
 
 //Uncomment this to use the simple error handler

@@ -2,8 +2,7 @@ import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { MyAngularErrorHandler } from './my-angular-error-handler';
 import { ErrorHandler } from '../../node_modules/@angular/core';
-import { BugSplatErrorHandler, BugSplatConfiguration, BugSplat, BugSplatLogger, Logger } from 'bugsplat';
-import { HttpClient } from '../../node_modules/@types/selenium-webdriver/http';
+import { BugSplatErrorHandler, BugSplatConfiguration, BugSplat, BugSplatLogger, Logger } from 'bugsplat-ng';
 import { HttpClientTestingModule } from '../../node_modules/@angular/common/http/testing';
 
 describe('DatabaseApplicationVersionSelector', () => {
