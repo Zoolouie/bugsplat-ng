@@ -7,6 +7,8 @@ BugSplat supports the collection of errors in Angular applications. The bugsplat
 * [Sign up](http://www.bugsplat.com/account-registration/) for BugSplat
 * Create a new [database](https://www.bugsplat.com/databases/) for your application
 * Check out the [live demo](http://newayz.net/my-angular-crasher/) of BugSplat’s Angular error reporting
+
+Not Using Angular 6?
 * See the legacy [Angular 4](https://github.com/BugSplat-Git/my-angular-4-crasher) version of BugSplat's error reporter
 
 ## Simple Configuration
