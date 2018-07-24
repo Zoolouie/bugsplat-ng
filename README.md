@@ -169,3 +169,7 @@ The my-angular-crasher sample demonstrates how to use BugSplat's npm package to 
 
 ## Contributing
 BugSplat loves open source software! If you have suggestions on how we can improve this integration, please reach out to support@bugsplat.com, create an [issue](https://github.com/BugSplat-Git/bugsplat-ng/issues) in our [GitHub repo](https://github.com/BugSplat-Git/bugsplat-ng) or send us a [pull request](https://github.com/BugSplat-Git/bugsplat-ng/pulls). 
+
+With :heart:,
+
+The BugSplat Team
