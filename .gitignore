@@ -4,7 +4,6 @@
 /dist
 /tmp
 /out-tsc
-/bugsplat
 
 # dependencies
 /node_modules
