@@ -160,10 +160,11 @@ The my-angular-crasher sample demonstrates how to use BugSplat's npm package to 
 
 1. Clone this repository or download the zip from the releases tab
 2. Open terminal or command prompt in this project's root directory
-3. run 'ng build bugsplat' then 'ng serve'
-4. Navigate to https://localhost:4200
-5. Click the 'Crash!' button, then follow the link that appears to view the crash on the BugSplat website
-6. When prompted to log in, use the username "Fred" and password "Flintstone"
+3. run 'npm install'
+4. run 'ng build bugsplat' then 'ng serve'
+5. Navigate to https://localhost:4200
+6. Click the 'Crash!' button, then follow the link that appears to view the crash on the BugSplat website
+7. When prompted to log in, use the username "Fred" and password "Flintstone"
 
 
 ## Contributing
