@@ -28,5 +28,4 @@ install:
   - npm install
 
 script:
-  - npm run test my-angular6-crasher --watch=false
-  - npm run test bugsplat-ng --watch=false
+ - npm run test -- --watch=false --progress=false --browsers=ChromeHeadlessCI
