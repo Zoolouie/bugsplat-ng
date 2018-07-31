@@ -28,4 +28,4 @@ install:
   - npm install
 
 script:
- - npm run test -- --watch=false --progress=false --browsers=ChromeHeadlessCI
+ - npm run test "bugsplat-ng" -- --watch=false --progress=false --browsers=ChromeHeadlessCI
