@@ -1,6 +1,6 @@
 [![BugSplat](https://s3.amazonaws.com/bugsplat-public/npm/header.png)](https://www.bugsplat.com)
 
-![travis-ci](https://travis-ci.org/Zoolouie/bugsplat-ng.svg?branch=master)
+[![travis-ci](https://travis-ci.org/Zoolouie/bugsplat-ng)](https://travis-ci.org/Zoolouie/bugsplat-ng.svg?branch=master)
 ## Introduction
 BugSplat supports the collection of errors in Angular applications. The bugsplat-ng npm package implements Angular’s [ErrorHandler](https://angular.io/api/core/ErrorHandler) interface in order to post errors to BugSplat where they can be tracked and managed. Adding BugSplat to your Angular application is extremely easy. Before getting started please complete the following tasks:
 
