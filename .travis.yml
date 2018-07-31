@@ -28,4 +28,5 @@ install:
   - npm install
 
 script:
- - npm run test "bugsplat-ng" -- --watch=false --progress=false
+  - npm run test "bugsplat-ng" -- --watch=false --progress=false
+  - npm run test "my-angular6-crasher" -- --watch=false --progress=false
