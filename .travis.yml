@@ -20,4 +20,3 @@ install:
 
 script:
   - npm run test
-  - npm run lint
